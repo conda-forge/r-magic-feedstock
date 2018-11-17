@@ -14,9 +14,9 @@ source:
   sha256: 7f8bc26e05003168e9d2dadf64eb9a34b51bc41beba482208874803dee7d6c20
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,8 +49,7 @@ about:
     is included.  The package also serves as a rebuttal to the often-heard comment "I
     thought R was just for statistics".
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
