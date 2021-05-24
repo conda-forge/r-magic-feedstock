@@ -3,13 +3,11 @@ About r-magic
 
 Home: https://github.com/RobinHankin/magic.git
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-magic-feedstock/blob/master/LICENSE.txt)
 
 Summary: A collection of efficient, vectorized algorithms for the creation and investigation of magic squares and hypercubes, including a variety of functions for the manipulation and analysis of arbitrarily dimensioned arrays.  The package includes methods for creating normal magic squares of any order greater than 2.  The ultimate intention is for the package to be a computerized embodiment all magic square knowledge, including direct numerical verification of properties of magic squares (such as recent results on the determinant of odd-ordered semimagic squares).  Some antimagic functionality is included.  The package also serves as a rebuttal to the often-heard comment "I thought R was just for statistics".
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-magic` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-magic` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
