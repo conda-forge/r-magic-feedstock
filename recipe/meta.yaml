@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/RobinHankin/magic.git
-  license: GPL-2
+  license: GPL-2.0-only
   summary: A collection of efficient, vectorized algorithms for the creation and investigation
     of magic squares and hypercubes, including a variety of functions for the manipulation
     and analysis of arbitrarily dimensioned arrays.  The package includes methods for
@@ -48,7 +48,8 @@ about:
     is included.  The package also serves as a rebuttal to the often-heard comment "I
     thought R was just for statistics".
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
