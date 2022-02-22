@@ -1,4 +1,4 @@
-{% set version = '1.5-9' %}
+{% set version = "1.6-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/magic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/magic/magic_{{ version }}.tar.gz
-  sha256: fa1d5ef2d39e880f262d31b77006a2a7e76ea38e306aae4356e682b90d6cd56a
+  sha256: 4516d48c9618e3f395db873e886f5deb3b66b32ebe10d4c26c1420ac848acbbf
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,15 +38,9 @@ test:
 about:
   home: https://github.com/RobinHankin/magic.git
   license: GPL-2.0-only
-  summary: A collection of efficient, vectorized algorithms for the creation and investigation
-    of magic squares and hypercubes, including a variety of functions for the manipulation
-    and analysis of arbitrarily dimensioned arrays.  The package includes methods for
-    creating normal magic squares of any order greater than 2.  The ultimate intention
-    is for the package to be a computerized embodiment all magic square knowledge, including
-    direct numerical verification of properties of magic squares (such as recent results
-    on the determinant of odd-ordered semimagic squares).  Some antimagic functionality
-    is included.  The package also serves as a rebuttal to the often-heard comment "I
-    thought R was just for statistics".
+  summary: A collection of efficient, vectorized algorithms for the creation and investigation of magic squares and hypercubes, including a variety of functions for the manipulation and analysis of arbitrarily dimensioned arrays.  The package includes methods for creating normal magic squares of any order greater than 2.  The
+    ultimate intention is for the package to be a computerized embodiment all magic square knowledge, including direct numerical verification of properties of magic squares (such as recent results on the determinant of odd-ordered semimagic squares).  Some antimagic functionality is included.  The package also serves as
+    a rebuttal to the often-heard comment "I thought R was just for statistics".
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
