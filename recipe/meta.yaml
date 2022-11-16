@@ -1,4 +1,4 @@
-{% set version = "1.6-0" %}
+{% set version = "1.6-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/magic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/magic/magic_{{ version }}.tar.gz
-  sha256: 4516d48c9618e3f395db873e886f5deb3b66b32ebe10d4c26c1420ac848acbbf
+  sha256: ca79ec7ae92b736cb128556c081abf547f49956c326e053a76579889cbcb7976
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
