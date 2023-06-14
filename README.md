@@ -1,11 +1,11 @@
-About r-magic
-=============
+About r-magic-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-magic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/RobinHankin/magic.git
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-magic-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of efficient, vectorized algorithms for the creation and investigation of magic squares and hypercubes, including a variety of functions for the manipulation and analysis of arbitrarily dimensioned arrays.  The package includes methods for creating normal magic squares of any order greater than 2.  The ultimate intention is for the package to be a computerized embodiment all magic square knowledge, including direct numerical verification of properties of magic squares (such as recent results on the determinant of odd-ordered semimagic squares).  Some antimagic functionality is included.  The package also serves as a rebuttal to the often-heard comment "I thought R was just for statistics".
 
