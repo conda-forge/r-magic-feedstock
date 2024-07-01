@@ -1,6 +1,5 @@
 {% set version = "1.6-1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-magic
@@ -13,8 +12,7 @@ source:
   sha256: ca79ec7ae92b736cb128556c081abf547f49956c326e053a76579889cbcb7976
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
